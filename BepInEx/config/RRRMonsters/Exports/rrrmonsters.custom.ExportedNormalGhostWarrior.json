@@ -1,0 +1,208 @@
+{
+   "$types" : {
+      "RRRCore.prefabs._0_2_0.RRRMobData, RRRCore, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null" : "1",
+      "RRRCore.prefabs._0_2_0.RRRCfgAppearance, RRRCore, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null" : "2",
+      "RRRCore.prefabs._0_2_0.RRRMobDataUtil+Vector3, RRRCore, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null" : "3",
+      "RRRCore.prefabs._0_2_0.RRRCfgCharacter, RRRCore, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null" : "4",
+      "HitData+DamageModifiers, assembly_valheim, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" : "5",
+      "RRRCore.prefabs._0_2_0.RRRCfgHumanoid, RRRCore, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null" : "6",
+      "RRRCore.prefabs._0_2_0.RRRMobDataUtil+DamageTypes, RRRCore, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null" : "7",
+      "RRRCore.prefabs._0_2_0.RRRCfgBaseAI, RRRCore, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null" : "8",
+      "RRRCore.prefabs._0_2_0.RRRCfgMonsterAI, RRRCore, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null" : "9",
+      "RRRCore.prefabs._0_2_0.RRRCfgCharacterDrop, RRRCore, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null" : "10",
+      "RRRCore.prefabs._0_2_0.RRRMobDataUtil+Drop, RRRCore, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null" : "11",
+      "RRRCore.prefabs._0_2_0.RRRCfgSpecial, RRRCore, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null" : "12"
+   },
+   "$type" : "1",
+   "sOriginalPrefabName" : "NormalGhostWarrior",
+   "sNewPrefabName" : "ExportedNormalGhostWarrior",
+   "Category_Appearance" : {
+      "$type" : "2",
+      "vScale" : {
+         "$type" : "3",
+         "fX" : 1,
+         "fY" : 1,
+         "fZ" : 1
+      },
+      "cTintColor" : null,
+      "cTintItems" : null,
+      "cBodySmoke" : null,
+      "cBodyFlames" : null,
+      "sCustomTexture" : null
+   },
+   "Category_Character" : {
+      "$type" : "4",
+      "sName" : "$enemy_ghostwarrior",
+      "sFaction" : "Undead",
+      "bBoss" : false,
+      "sBossEvent" : "",
+      "sDefeatSetGlobalKey" : "",
+      "fMoveSpeedMulti" : 1,
+      "bToleratesWater" : true,
+      "bToleratesFire" : false,
+      "bToleratesSmoke" : true,
+      "bStaggerWhenBlocked" : null,
+      "fHealth" : 40,
+      "dDamageTaken" : {
+         "$type" : "5",
+         "m_blunt" : "Resistant",
+         "m_slash" : "Resistant",
+         "m_pierce" : "Resistant",
+         "m_chop" : "Ignore",
+         "m_pickaxe" : "Ignore",
+         "m_fire" : "Weak",
+         "m_frost" : "Weak",
+         "m_lightning" : "Weak",
+         "m_poison" : "Immune",
+         "m_spirit" : "Weak"
+      }
+   },
+   "Category_Humanoid" : {
+      "$type" : "6",
+      "dtAttackDamageOverride" : {
+         "$type" : "7",
+         "fDamage" : 0,
+         "fBlunt" : 0,
+         "fSlash" : 0,
+         "fPierce" : 0,
+         "fChop" : 0,
+         "fPickaxe" : 0,
+         "fFire" : 0,
+         "fFrost" : 0,
+         "fLightning" : 0,
+         "fPoison" : 0,
+         "fSpirit" : 0
+      },
+      "fAttackDamageTotalOverride" : null,
+      "sAttackProjectileOverride" : null,
+      "aDefaultItems" : [
+         "NPC_KnifeBlackMetal_Left",
+         "NPC_KnifeBlackMetal_Right",
+         "attack_knife_secondary",
+         "attack_knife_slash",
+         "attack_knife_right180",
+         "attack_knife_leftlong",
+         "attack_knife_left180",
+         "attack_knife_rightlong"
+      ],
+      "aRandomWeapon" : [
+         
+      ],
+      "aRandomArmor" : [
+         
+      ],
+      "aRandomShield" : [
+         
+      ],
+      "aaRandomSets" : [
+         
+      ],
+      "aHitEffects" : [
+         "vfx_ghost_hit",
+         "sfx_ghost_hurt"
+      ],
+      "aDeathEffects" : [
+         "vfx_ghost_death",
+         "sfx_ghost_death"
+      ],
+      "aConsumeItemEffects" : [
+         
+      ],
+      "aAdvancedCustomAttacks" : null
+   },
+   "Category_BaseAI" : {
+      "$type" : "8",
+      "fViewRange" : 30,
+      "fViewAngle" : 90,
+      "fHearRange" : 9999,
+      "aAlertedEffects" : [
+         "sfx_ghost_alert"
+      ],
+      "aIdleEffects" : [
+         "sfx_ghost_idle"
+      ],
+      "fIdleEffectsInterval" : 5,
+      "fIdleEffectsChance" : 0.5,
+      "sPathAgentType" : "HumanoidAvoidWater",
+      "fRandomCircleInterval" : 2,
+      "fRandomMoveInterval" : 20,
+      "fRandomMoveRange" : 10,
+      "bRandomFly" : false,
+      "fChanceToTakeoff" : 1,
+      "fChanceToLand" : 1,
+      "fGroundDuration" : 10,
+      "fAirDuration" : 10,
+      "fMaxLandAltitude" : 5,
+      "fFlyAltitudeMin" : 3,
+      "fFlyAltitudeMax" : 10,
+      "fTakeoffTime" : 5,
+      "bAvoidFire" : false,
+      "bAfraidOfFire" : false,
+      "bAvoidWater" : true,
+      "sSpawnMessage" : "",
+      "sDeathMessage" : ""
+   },
+   "Category_MonsterAI" : {
+      "$type" : "9",
+      "fAlertRange" : 20,
+      "bFleeIfHurtWhenTargetCantBeReached" : true,
+      "bFleeIfNotAlerted" : false,
+      "fFleeIfLowHealth" : 0,
+      "bCirculateWhileCharging" : false,
+      "bCirculateWhileChargingFlying" : false,
+      "bEnableHuntPlayer" : false,
+      "bAttackPlayerObjects" : true,
+      "bAttackPlayerObjectsWhenAlerted" : null,
+      "fInterceptTimeMax" : 2,
+      "fInterceptTimeMin" : 0,
+      "fMaxChaseDistance" : 0,
+      "fMinAttackInterval" : 0,
+      "fCircleTargetInterval" : 0,
+      "fCircleTargetDuration" : 2,
+      "fCircleTargetDistance" : 4,
+      "bSleeping" : false,
+      "bNoiseWakeup" : false,
+      "fNoiseRangeScale" : null,
+      "fWakeupRange" : 5,
+      "aWakeupEffects" : [
+         
+      ],
+      "bAvoidLand" : false,
+      "aConsumeItems" : [
+         
+      ],
+      "fConsumeRange" : 2,
+      "fConsumeSearchRange" : 5,
+      "fConsumeSearchInterval" : 10,
+      "fConsumeHeal" : 0
+   },
+   "Category_CharacterDrop" : {
+      "$type" : "10",
+      "bReplaceOriginalDrops" : true,
+      "drDrops" : [
+         {
+            "$type" : "11",
+            "sPrefabName" : "AmberPearl",
+            "iAmountMin" : 1,
+            "iAmountMax" : 1,
+            "fChance" : 1,
+            "bOnePerPlayer" : false,
+            "bLevelMultiplier" : true
+         }
+      ]
+   },
+   "Category_Special" : {
+      "$type" : "12",
+      "bCanTame" : false,
+      "bAlwaysTame" : false,
+      "bCommandableWhenTame" : false,
+      "bCanProcreateWhenTame" : false,
+      "bFxNoTame" : false,
+      "bSfxNoAlert" : false,
+      "bSfxNoIdle" : false,
+      "bSfxNoHit" : false,
+      "bSfxNoDeath" : false
+   },
+   "Category_NpcOnly" : null,
+   "sConfigFormatVersion" : "0.2.0"
+}

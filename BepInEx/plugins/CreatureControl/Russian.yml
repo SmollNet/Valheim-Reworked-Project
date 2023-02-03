@@ -1,0 +1,254 @@
+﻿creatureGender:
+  default: n
+
+genderedCreatureTranslations:
+  n: '[{effect} ][{infusion} ]{name}[ {affix}]'
+    
+genderedTranslations:
+
+translations:
+  Aggressive: Агрессивн.
+  Armored: Бронирован.
+  Curious: Любопытн.
+  Quick: Быстр.
+  Regenerating: Регенерирующ.
+  Splitting: Делящ.
+
+  Fire: Огнен.
+  Frost: Ледян.
+  Lightning: Грозов.
+  Chaos: Хаотическ.
+  Spirit: Духовн.
+  Poison: Ядовит.
+  
+  Reflective: Отражающ.
+  Shielded: Защищен.
+  Mending: Исцеляющ.
+  Summoner: Призыватель
+  Elementalist: Элементалист
+  Enraged: Разъярен.
+  Twin: Близнецы
+  
+  CreatureSectorLevelIncrease: Существа рядом с {player} набирают силу, чтобы отомстить за смерть своих сородичей.
+  MinimapSectorLevel: 'Уровень сектора: {level}'
+  ConfigEditorSave: Сохранить и Применить
+  ConfigEditorApplyNoSave: Применить без сохранения
+  ConfigEditorDiscard: Отменить и закрыть
+  Edit Creature YAML config: Изменить Creature YAML config
+  Edit Item YAML config: Изменить Item YAML config
+  SummonerEikthyr: '{boss} Призыватель призвал на помощь Грейдворфа Дикаря'
+  SummonerElder: '{boss} Призыватель призвал Тролля на помощь'
+  SummonerBonemass: '{boss} Призыватель призвала {number} Элитных Драугров на помощь'
+  SummonerModer: '{boss} Призыватель призвала {number} Дрейков на помощь'
+  SummonerYagluth: '{boss} Призыватель призвал Фулинга Берсерка на помощь'
+  
+enumTranslations:
+  Toggle:
+    On: Вкл
+    Off: Выкл
+  Difficulty:
+    Custom: Выборочно
+    Very_easy: Очень легко
+    Easy: Легко
+    Medium: Средне
+    Hard: Тяжело
+    Very_hard: Очень тяжело
+    Insane: Безумно
+  CreatureSectorAnnouncementScope:
+    Local: Локально
+    Global: Глобально
+    Off: Выкл
+  LootSystem:
+    Vanilla: По умолчанию
+    Linear: Линейно
+    CalculateChance: Вычислить шанс
+    CalculateAmount: Вычислить количество
+  VisualLevelIndicator:
+    Off: Выкл
+    On: Вкл
+    BossesOff: Выкл для боссов
+    CreaturesOff: Выкл для существ
+  AllowedConsoleCommands:
+    CreatureCommands: Команды существ
+    InformationCommands: Информационные команды
+    None: Ничего
+  VisualExtraEffectIndicator:
+    Color: Цвет
+    Text: Текст
+    Both: Цвет и текст
+  DifficultySecondFactor:
+    None: Ничего
+    Age_of_world: Используйте возраст мира
+    Distance: Использовать расстояние от точки возрождения
+    BossesKilled: Использовать количество убитых боссов
+  SpawnLevel:
+    None: Ничего
+    One: 1-й
+    Two: 2-й
+    Three: 3-й
+    Four: 4-й
+    Five: 5-й
+  CreatureSectorWorldLevel:
+    Disabled: Отключено
+    None: Ничего
+    One: 1-й
+    Two: 2-й
+    Three: 3-й
+    Four: 4-й
+    Five: 5-й
+
+settingGroups:
+  General: Общие
+  Creatures: Существа
+  Loot: Лут
+  Bosses: Боссы
+  Distance from Spawn: Расстояние от точки возрождения
+  Age of world: Возраст мира
+  Custom level chances: Шансы на собственный уровень
+  Creature Affix chances: Шанс на способность существа
+  Creature Infusion chances: Шанс стихии существа
+  Boss Affix chances: Шанс на способность босса
+  Boss Affix power: Сила способности босса
+
+settings:
+  Lock Configuration:
+    desc: Конфигурация заблокирована и не может быть изменена клиентами. Активен только для серверов.
+  Use creature configuration yaml:
+    desc: Читает файл CreatureConfig.yml, если он присутствует. Конфигурация, выполненная с помощью файла YAML, переопределит те же настройки, выполненные с помощью файла конфигурации по умолчанию. Для всего, что не настроено в файле YAML, по-прежнему будет использоваться файл конфигурации по умолчанию.
+  Use item configuration yaml:
+    desc: Читает файл ItemConfig.yml, если он присутствует. Конфигурация, выполненная с помощью файла YAML, переопределит те же настройки, выполненные с помощью файла конфигурации по умолчанию. Для всего, что не настроено в файле YAML, по-прежнему будет использоваться файл конфигурации по умолчанию.
+  nexusID:
+    desc: Nexus mod ID for updates.
+  HP increase per player in multiplayer (percentage):
+    desc: Увеличение здоровья умноженное на каждого игрока в мультиплеере(в процентах).
+  DMG increase per player in multiplayer (percentage):
+    desc: Увеличение урона умноженное на каждого игрока в мультиплеере(в процентах).
+  Minimum player count for multiplayer scaling:
+    desc: Минимальное количество игроков используемое для множителя в мультиплеере.
+  Maximum player count for multiplayer scaling:
+    desc: Максимальное количество игроков используемое для множителя в мультиплеере.
+  Player count to be added to the actual player count for multiplayer scaling (0 is disabled):
+    desc: Добавляет определенное число к фактическому количеству игроков для множителя в мультиплеере(0 - Выключено)
+  Multiplayer scaling per player range (0 is unlimited):
+    desc: Радиус, в котором должны находиться другие игроки, чтобы учитываться при расчете множителя в мультиплеере(0 не ограничен). Не действует, если фиксированное количество игроков установлено не на 0.
+  Nameplate display on mouseover range:
+    desc: Максимальное расстояние для таблички, отображаемой при наведении курсора мыши.
+  Visual indicators for level:
+    desc: Может использоваться для отключения визуальных индикаторов уровня целей, например, их звезд или цвета.
+  Console commands allowed to be used by users on a server:
+    desc: Задает команды CLLC, которые могут использовать пользователи на сервере. Администраторы сервера всегда могут использовать все команды. Не имеет никакого эффекта, если конфигурация разблокирована (по понятным причинам).
+  Difficulty:
+    desc: Устанавливает шансы на повышение уровня всех существ.
+  Second factor:
+    desc: Измените второй фактор, используемый для расчета шансов повышения уровня.
+  Display circles on the map for distance from spawn option:
+    desc: Отображение кружков на карте для параметра расстояние от спавна.
+  Creatures can spawn with special effects:
+    desc: Существа могут появляться со специальными эффектами, что делает их намного сложнее убить.
+  Visual indicator for special effects:
+    desc: Изменяет способ отображения визуального индикатора дополнительных эффектов существ.
+  Creatures can spawn with elemental infusions:
+    desc: Существа могут появится с элементом, что делает их намного более трудными для убийства.
+  Add the infusion to the creatures name:
+    desc: Существа с элементом имеют элемент, добавленный к их имени.
+  Brightness for the elemental infusion visual indicator (percentage):
+    desc: Устанавливает яркость визуального эффекта пламени для существ, наполненных стихиями.
+  Minimum stars:
+    desc: Устанавливает минимальные звезды для всех существ. Не влияет на пользовательскую сложность.
+  Maximum stars:
+    desc: Устанавливает максимальное количество звезд для всех существ. Не влияет на пользовательскую сложность.
+  Time until creatures in dungeons respawn in minutes (0 means disabled, 20 is one ingame day):
+    desc: Время до возрождения существ в подземельях в минутах (0 = отключено, 20 = один игровой день).
+  Time until creatures in camps respawn in minutes (0 means disabled, 20 is one ingame day):
+    desc: Время до возрождения существ в лагерях в минутах (0 = отключено, 20 = один игровой день).
+  Creature size increase per star (percentage):
+    desc: Увеличивает размер существ на звезду.
+  Increase creature size even in dungeons (where they might get stuck):
+    desc: Если размер существ будет увеличен и в подземельях, они могут застрять, если станут слишком большими.
+  Base health for creatures (percentage):
+    desc: Базовое здоровье для существ в процентах.
+  Health gained per star for creatures (percentage):
+    desc: Здоровье, полученное за звезду для существ в процентах.
+  Base damage for creatures (percentage):
+    desc: Базовый урон для существ в процентах.
+  Damage gained per star for creatures (percentage):
+    desc: Урон, полученный за звезду для существ в процентах.
+  Base movement speed for creatures (percentage):
+    desc: Базовая скорость передвижения существ в процентах.
+  Base attack speed for creatures (percentage):
+    desc: Базовая скорость атаки для существ в процентах.
+  World level required to enable creature sectors:
+    desc: Минимальный мировой уровень для того, чтобы секторы существ стали активными.
+  Time until each creature sector is reset (0 is no reset):
+    desc: Время, которое должно пройти, прежде чем бонусный уровень существа будет сброшен в минутах (0 = отключено, 20 = один игровой день).
+  Kills required in a sector for each bonus level:
+    desc: Убийства существ, необходимые в том же секторе, чтобы существа получили бонусный уровень.
+  Sets the scope for creature sector level up announcements:
+    desc: Устанавливает область действия для объявлений о повышении уровня сектора существ.
+  Duration of the map ping for creature sector level ups in seconds (0 is disabled):
+    desc: Пингует карту при повышении уровня сектора существ. Время в секундах. 0 означает отключено.
+  Displays the current creature sector level on the minimap:
+    desc: Отображает текущий уровень сектора существа на миникарте.
+  Loot system to be used:
+    desc: |
+     Устанавливает систему добычи, которая будет использоваться.
+     Vanilla полностью отключает систему добычи из этого мода.
+     Линейный: Выпадающие предметы умножаются на уровень существ.
+     Вычислить шанс: у кабана есть 50% шанс сбросить 2 мяса, он либо сбросит 2, либо нет.
+     Вычислить количество: у кабана есть 50% шанс сбросить 2 мяса, он всегда будет сбрасывать 1.
+  Chance for additional loot per star for creatures:
+    desc: Шанс получить дополнительную добычу за звезду для существ.
+  Chance for additional loot per star for bosses:
+    desc: Шанс получить дополнительную добычу за звезду для боссов.
+  Multiplier for dropped creature items:
+    desc: Умножает предметы, сброшенные всеми существами.
+  Multiplier for dropped boss items:
+    desc: Умножает предметы, сброшенные всеми боссами.
+  Creatures can drop multiple trophies:
+    desc: Если существа могут сбросить несколько трофеев.
+  Bosses can drop multiple trophies:
+    desc: Если боссы могут сбросить несколько трофеев.
+  Drop multiplier for passive creatures (like Seagulls and Crows):
+    desc: Умножает предметы, сброшенные всеми пассивными существами, такими как вороны и чайки.
+  Time until items in dungeons respawn in minutes (0 means disabled, 20 is one ingame day):
+    desc: Время до возрождения предметов в подземельях в минутах (0 = отключено, 20 = один игровой день).
+  Bosses can spawn with special effects:
+    desc: Боссы могут появляться со специальными эффектами, что делает их намного сложнее убить.
+  Use creature level chances for bosses:
+    desc: Вкл. Означает, что шансы на повышение уровня существ используются также и для боссов. В противном случае будут использоваться шансы на индивидуальный уровень для боссов.
+  Star chances for bosses (percentages):
+    desc: Шансы на уровни для боссов. Начните с 1 звезды слева направо, столько звезд, сколько хотите. Шанс 0 звезд будет автоматически рассчитан из остатка.
+  Boss size increase per star (percentage):
+    desc: Увеличивает размер боссов на звезду.
+  Health gained per star for bosses (percentage):
+    desc: Здоровье, полученное за звезду для боссов в процентах.
+  Damage gained per star for bosses (percentage):
+    desc: Урон, получаемый за звезду для боссов в процентах.
+  World level {level} start (days):
+    desc: Должны пройти дни, прежде чем ваш мир достигнет мирового уровня {level}.
+  Distance from spawn for level {level} start:
+    desc: Расстояние от точки возрождения до начала уровня {level}. Радиус для мира по умолчанию - 10500.
+  Chances for stars at world level {level} (percent):
+    desc: 'Шансы на звезды на мировом уровне в процентах. Столько звезд, сколько хотите слева направо, через запятую. Начните с 1 звезды. Шанс 0 звезд будет автоматически рассчитан с использованием остатка. Пример: 30, 5.5, 2.25, 5, 10, 10, 3 '
+  Chance for {effect} effect to spawn (percentage):
+    desc: Шанс появления существ с эффектом {effect} (в процентах).
+  Chance for {infusionDescription} infusion to spawn (percentage):
+    desc: Шанс появления {infusion Description} существ стихии (в процентах).
+  Multiplier for infusion chances per star:
+    desc: Множитель применяется к базовым шансам на то, чтобы стихия появлялись в соответствии с количеством звезд существа. Шансы на каждое количество звезд, слева направо, разделены запятыми. Начните с 0 звезд. Значение по умолчанию равно 1.
+  Chance for {affix} affix to spawn (percentage):
+    desc: Вероятность появления боссов {affix} со способностью (в процентах).
+  Reflective base damage:
+    desc: Базовый урон за каждый удар для способности босса Отражающ.
+  Shielded damage reduction (percentage):
+    desc: Снижение урона от стрел в процентах для способности босса Защищен.
+  Mending healing factor:
+    desc: Множитель способности босса Исцеляющ.
+  Number of summons for Summoners:
+    desc: Количество призывов в течение боя для способности босса Призыватель.
+  Elementalist damage increase (percentage):
+    desc: Увеличение урона от стихий для способности босса Элементалист.
+  Enraged damage increase (percentage):
+    desc: Увеличение физического урона для способности босса Разъярен.
+  Twin damage and health (percentage):
+    desc: Здоровье и урон для способности босса Близнецы.

@@ -1,0 +1,12 @@
+{  
+  "$pp_alchemy_table": "Алхимическая лаборатория",
+  "$pp_alchemy_table_description": "Алхимический лаборатория для создания зелий",
+
+  "pp_alchemy_table_ext1": "Волшебная книга",
+  "pp_alchemy_table_ext1_description": "Увеличивает знания в области алхимии",  
+
+  "magic_belt": "Магический пояс",
+  "wizard_hat": "Шляпа волшебника",
+  "warlock_hat": "Шляпа чародея",
+  "necromant_wand": "Посох некроманта",
+}

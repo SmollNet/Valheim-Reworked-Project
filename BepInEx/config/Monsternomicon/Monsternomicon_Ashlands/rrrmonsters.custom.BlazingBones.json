@@ -1,0 +1,648 @@
+{
+   "sOriginalPrefabName": "SkeletonWarrior",
+   "sNewPrefabName": "BlazingBones",
+   "Category_Appearance": {
+      "vScale": {
+         "fX": 1.2,
+         "fY": 1.2,
+         "fZ": 1.2
+      },
+      "cTintColor": null,
+      "cTintItems": null,
+      "cBodySmoke": null,
+      "cBodyFlames": {
+         "fRed": 2.55,
+         "fGreen": 1.5,
+         "fBlue": 0.5
+      },
+      "sCustomTexture": "BurnedBones"
+   },
+   "Category_Character": {
+      "sName": "Blazing Bones",
+      "sFaction": "Undead",
+      "bBoss": false,
+      "sBossEvent": "",
+      "sDefeatSetGlobalKey": "killed_blazingbones",
+      "fMoveSpeedMulti": 1.2,
+      "bToleratesWater": true,
+      "bToleratesFire": true,
+      "bToleratesSmoke": true,
+      "fHealth": 180,
+      "dDamageTaken": {
+         "m_blunt": "Weak",
+         "m_slash": "Normal",
+         "m_pierce": "Resistant",
+         "m_chop": "Ignore",
+         "m_pickaxe": "Ignore",
+         "m_fire": "Immune",
+         "m_frost": "Weak",
+         "m_lightning": "Normal",
+         "m_poison": "Immune",
+         "m_spirit": "Normal"
+      }
+   },
+   "Category_Humanoid": {
+      "dtAttackDamageOverride": null,
+      "fAttackDamageTotalOverride": null,
+      "sAttackProjectileOverride": null,
+      "aDefaultItems": [
+         "@1",
+         "@2",
+         "ArmorPaddedCuirass",
+         "ArmorPaddedGreaves",
+         "CapeLinen"        
+      ],
+      "aRandomWeapon": [],
+      "aRandomArmor": [],
+      "aRandomShield": [],
+      "aaRandomSets": [
+         {
+            "aSetItems": [
+               "@3",
+               "@4"
+            ]
+         },
+         {
+            "aSetItems": [
+               "@5",
+               // "@6",
+               // "@7",
+               // "@8",
+               // "@9",
+               // "@10",
+               // "@11",
+               // "@12",
+               // "@13",
+               // "@14",
+               "@15",
+               // "@16",
+               // "@17",
+               "ShieldBlackmetal" 
+            ]
+         }
+      ],
+      "aAdvancedCustomAttacks": [
+         // Магия x2
+         {
+            "sOriginalPrefabName": "troll_throw",
+            "sTargetAnim": "cast1",
+            "fAIAttackInterval": 24,
+            "bAIPrioritized": false,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 0,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 140,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": "GoblinShaman_projectile_fireball",
+            "aStartEffects": [
+               "sfx_imp_fireball_launch"
+            ],
+            "aHitEffects": [
+               "fx_shaman_fireball_expl"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "troll_throw",
+            "sTargetAnim": "rage",
+            "fAIAttackInterval": 32,
+            "bAIPrioritized": false,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 0,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 140,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": "GoblinShaman_projectile_fireball",
+            "aStartEffects": [
+               "sfx_imp_fireball_launch"
+            ],
+            "aHitEffects": [
+               "fx_shaman_fireball_expl"
+            ],
+            "aTriggerEffects": null
+         },
+         // Лук x2
+         {
+            "sOriginalPrefabName": "skeleton_bow",
+            "sTargetAnim": "",
+            "fAIAttackInterval": 6,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 0,
+               "fPierce": 80,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 80,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": "bow_projectile_fire",
+            "aStartEffects": null,
+            "aHitEffects": [
+               "sfx_imp_fireball_explode"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "skeleton_bow",
+            "sTargetAnim": "",
+            "fAIAttackInterval": 18,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 0,
+               "fPierce": 80,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 80,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": "bow_projectile_fire",
+            "aStartEffects": null,
+            "aHitEffects": [
+               "sfx_imp_fireball_explode"
+            ],
+            "aTriggerEffects": null
+         },
+         // Меч из чёрного металла x12
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "swing_longsword0",
+            "fAIAttackInterval": 3,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 140,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": [
+               "sfx_axe_hit",
+               "VFX_FireSlash1_DoD"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "swing_longsword1",
+            "fAIAttackInterval": 4,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 140,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": [
+               "sfx_axe_hit",
+               "vfx_FireballHit"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "swing_longsword2",
+            "fAIAttackInterval": 4,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 120,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": [
+               "sfx_axe_hit",
+               "vfx_FireballHit"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "swing_axe0",
+            "fAIAttackInterval": 4,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 120,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": [
+               "sfx_axe_hit",
+               "vfx_FireballHit"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "swing_axe1",
+            "fAIAttackInterval": 4,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 120,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": [
+               "sfx_axe_hit",
+               "vfx_FireballHit"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "swing_axe2",
+            "fAIAttackInterval": 4,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 120,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": [
+               "sfx_axe_hit",
+               "vfx_FireballHit"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "battleaxe_attack0",
+            "fAIAttackInterval": 12,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride":{
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 180,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": [
+               "sfx_axe_hit",
+               "vfx_FireballHit"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "battleaxe_attack1",
+            "fAIAttackInterval": 12,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride":{
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 180,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": [
+               "sfx_axe_hit",
+               "vfx_FireballHit"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "bash",
+            "fAIAttackInterval": 4,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 120,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": null,
+            "aTriggerEffects": [
+               "sfx_axe_hit",
+               "vfx_FireballHit"
+            ]
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "jump_attack",
+            "fAIAttackInterval": 20,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 140,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": [
+               "sfx_axe_hit"
+               "vfx_ImpDeath",
+               "vfx_FireballHit"
+            ],
+            "aTriggerEffects":null
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "rage",
+            "fAIAttackInterval": 32,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 120,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": null,
+            "aTriggerEffects": [
+               "sfx_axe_hit",
+               "vfx_ImpDeath",
+               "vfx_FireballHit"
+            ]
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "swing_sledge",
+            "fAIAttackInterval": 16,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 120,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 40,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_axe_swing"
+            ],
+            "aHitEffects": null,
+            "aTriggerEffects": [
+               "sfx_axe_hit"
+            ]
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSwordBlackMetal",
+            "sTargetAnim": "kick",
+            "fAIAttackInterval": 4,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 100,
+               "fSlash": 0,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 0,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": null,
+            "aHitEffects": [
+               "sfx_unarmed_hit"
+            ],
+            "aTriggerEffects": null
+         }
+      ]
+   },
+   "Category_BaseAI": {
+      "fViewRange": 30,
+      "fViewAngle": 90,
+      "fHearRange": 9999,
+      "sPathAgentType": "HumanoidNoSwim",
+      "fRandomCircleInterval":2,
+      "fRandomMoveInterval":20,
+      "fRandomMoveRange":10,
+      "bAvoidFire":false,
+      "bAfraidOfFire":false,
+      "bAvoidWater":true,
+      "sSpawnMessage":"",
+      "sDeathMessage":""
+   },
+   "Category_MonsterAI": {
+      "fAlertRange": 20,
+      "bFleeIfHurtWhenTargetCantBeReached": true,
+      "bFleeIfNotAlerted": false,
+      "fFleeIfLowHealth": 0,
+      "bCirculateWhileCharging": true,
+      "bCirculateWhileChargingFlying": false,
+      "bEnableHuntPlayer": false,
+      "bAttackPlayerObjects": true,
+      "bAttackPlayerObjectsWhenAlerted": true,
+      "fInterceptTimeMax": 2,
+      "fInterceptTimeMin": 0,
+      "fMaxChaseDistance": 0,
+      "fMinAttackInterval": 0,
+      "fCircleTargetInterval": 10,
+      "fCircleTargetDuration": 5,
+      "fCircleTargetDistance": 5,
+      "aConsumeItems": [],
+      "fConsumeRange": 2,
+      "fConsumeSearchRange": 5,
+      "fConsumeSearchInterval": 10,
+      "fConsumeHeal": 0
+   },
+   "Category_CharacterDrop": {
+      "bReplaceOriginalDrops": true,
+      "drDrops":[
+         {
+            "sPrefabName": "Coal",
+            "iAmountMin": 1,
+            "iAmountMax": 2,
+            "fChance": 1,
+            "bOnePerPlayer": false,
+            "bLevelMultiplier": true
+         }
+      ]
+   },
+   "Category_Special": {
+      "bCanTame": false,
+      "bAlwaysTame": false,
+      "bCommandableWhenTame": false,
+      "bCanProcreateWhenTame": false,
+      "bFxNoTame": false,
+      "bSfxNoAlert": false,
+      "bSfxNoIdle": false,
+      "bSfxNoHit": false,
+      "bSfxNoDeath": false
+   },
+   "Category_NpcOnly": null,
+   "sConfigFormatVersion": "0.2.0"
+}

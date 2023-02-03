@@ -1,0 +1,18 @@
+{  
+  "piece_griddle": "Каменный гриль",
+  "piece_griddle_description": "Простая установка для приготовления блюд на углях",
+  
+  "piece_grill": "Гриль",
+  "piece_grill_description": "Установка для приготовления блюд на углях",
+  
+  "piece_grill_ext1": "Печь",
+  "piece_grill_ext1_description": "Улучшения для гриля",
+
+  "piece_prep": "Стол для готовки",
+  "piece_prep_description": "...",
+
+  "piece_rk_campfire": "Костер без дыма",
+  "piece_rk_campfire_description": "Как обычный костер, только без дыма",
+
+  "rk_chefhat": "Шляпа шеф-повара"
+}

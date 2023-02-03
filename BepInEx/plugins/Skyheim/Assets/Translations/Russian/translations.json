@@ -1,0 +1,13 @@
+{  
+  "$piece_skyforge": "Небесная кузница",
+  "$piece_skyforge_description": "Небесная кузница",
+
+  "$piece_skyforge_ext1": "Зеленый рунный камень",
+  "$piece_skyforge_ext1_description": "Улучшение для небесной кузницы",    
+
+  "$piece_skyforge_ext2": "Синй рунный камень",
+  "$piece_skyforge_ext2_description": "Улучшение для небесной кузницы",   
+
+  "$piece_skyforge_ext3": "Фиолетовый рунный камень",
+  "$piece_skyforge_ext3_description": "Улучшение для небесной кузницы", 
+}

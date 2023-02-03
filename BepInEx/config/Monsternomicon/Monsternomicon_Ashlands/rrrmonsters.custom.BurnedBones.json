@@ -1,0 +1,434 @@
+{
+   "sOriginalPrefabName": "SkeletonWarrior",
+   "sNewPrefabName": "BurnedBones",
+   "Category_Appearance": {
+      "vScale": {
+         "fX": 1.3,
+         "fY": 1.3,
+         "fZ": 1.3
+      },
+      "cTintColor": null,
+      "cTintItems": null,
+      "cBodySmoke": null,
+      "cBodyFlames": {
+         "fRed": 0.05,
+         "fGreen": 0.05,
+         "fBlue": 0.05
+      },
+      "sCustomTexture": "BurnedBones"
+   },
+   "Category_Character": {
+      "sName": "Burned Bones",
+      "sFaction": "Undead",
+      "bBoss": false,
+      "sBossEvent": "",
+      "sDefeatSetGlobalKey": "killed_burnedbones",
+      "fMoveSpeedMulti": 1,
+      "bToleratesWater": true,
+      "bToleratesFire": false,
+      "bToleratesSmoke": true,
+      "fHealth": 240,
+      "dDamageTaken": {
+         "m_blunt": "Weak",
+         "m_slash": "Normal",
+         "m_pierce": "Resistant",
+         "m_chop": "Ignore",
+         "m_pickaxe": "Ignore",
+         "m_fire": "VeryResistant",
+         "m_frost": "Weak",
+         "m_lightning": "Normal",
+         "m_poison": "Immune",
+         "m_spirit": "Normal"
+      }
+   },
+   "Category_Humanoid": {
+      "dtAttackDamageOverride": null,
+      "fAttackDamageTotalOverride": null,
+      "sAttackProjectileOverride": null,
+      "aDefaultItems": [
+         "ArmorPaddedCuirass",
+         "ArmorPaddedGreaves",
+         "CapeLinen"
+      ],
+      "aRandomWeapon": [],
+      "aRandomArmor": [],
+      "aRandomShield": [],
+      "aaRandomSets": [
+         {
+            "aSetItems": [
+               "@1",
+               "@2"
+            ]
+         },
+         {
+            "aSetItems": [
+               // "@3",
+               // "@4",
+               "@5",
+               "@6",
+               "@7",
+               "@8",
+               // "@9",
+            ]
+         }
+      ],
+      "aAdvancedCustomAttacks": [
+         // Лук x2
+         {
+            "sOriginalPrefabName": "skeleton_bow",
+            "sTargetAnim": "",
+            "fAIAttackInterval": 6,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 0,
+               "fPierce": 80,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 80,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": "bow_projectile_fire",
+            "aStartEffects": null,
+            "aHitEffects": [
+               "sfx_imp_fireball_explode"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "skeleton_bow",
+            "sTargetAnim": "",
+            "fAIAttackInterval": 18,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 0,
+               "fPierce": 80,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 80,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": "bow_projectile_fire",
+            "aStartEffects": null,
+            "aHitEffects": [
+               "sfx_imp_fireball_explode"
+            ],
+            "aTriggerEffects": null
+         },
+         // Двуручный молот x7
+         {
+            "sOriginalPrefabName": "SkeletonSledgeIron",
+            "sTargetAnim": "battleaxe_attack0",
+            "fAIAttackInterval": 16,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 0,
+               "fSlash": 160,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 60,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "vfx_clubhit",
+               "sfx_sledge_hit"
+            ],
+            "aHitEffects": [
+               "vfx_clubhit",
+               "sfx_sledge_hit",
+               "sfx_imp_fireball_explode"
+            ],
+            "aTriggerEffects": null
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSledgeIron",
+            "sTargetAnim": "battleaxe_attack1",
+            "fAIAttackInterval": 16,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 100,
+               "fSlash": 0,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 60,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_sledge_swing"
+            ],
+            "aHitEffects": [
+               "vfx_clubhit",
+               "sfx_sledge_hit"
+            ],
+            "aTriggerEffects": [
+               "vfx_clubhit",
+               "sfx_sledge_hit",
+               "sfx_imp_fireball_explode"
+            ]
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSledgeIron",
+            "sTargetAnim": "bash",
+            "fAIAttackInterval": 16,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 100,
+               "fSlash": 0,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 60,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_sledge_swing"
+            ],
+            "aHitEffects": null,
+            "aTriggerEffects": [
+               "vfx_clubhit",
+               "sfx_sledge_hit",
+               "sfx_imp_fireball_explode"
+            ]
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSledgeIron",
+            "sTargetAnim": "swing_sledge",
+            "fAIAttackInterval": 16,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 100,
+               "fSlash": 0,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 60,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_sledge_swing"
+            ],
+            "aHitEffects": null,
+            "aTriggerEffects": [
+               "vfx_clubhit",
+               "sfx_sledge_hit",
+               "fx_dragon_land",
+               "sfx_imp_fireball_explode"
+            ]
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSledgeIron",
+            "sTargetAnim": "jump_attack",
+            "fAIAttackInterval": 20,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 100,
+               "fSlash": 0,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 60,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_sledge_swing"
+            ],
+            "aHitEffects": null,
+            "aTriggerEffects": [
+               "vfx_clubhit",
+               "sfx_sledge_hit",
+               "fx_dragon_land",
+               "sfx_imp_fireball_explode"
+            ]
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSledgeIron",
+            "sTargetAnim": "rage",
+            "fAIAttackInterval": 32,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 100,
+               "fSlash": 0,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 60,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack",
+               "sfx_sledge_swing"
+            ],
+            "aHitEffects": null,
+            "aTriggerEffects": [
+               "vfx_clubhit",
+               "sfx_sledge_hit",
+               "fx_dragon_land",
+               "sfx_imp_fireball_explode"
+            ]
+         },
+         {
+            "sOriginalPrefabName": "SkeletonSledgeIron",
+            "sTargetAnim": "kick",
+            "fAIAttackInterval": 4,
+            "bAIPrioritized": true,
+            "dtAttackDamageOverride": {
+               "fDamage": 0,
+               "fBlunt": 100,
+               "fSlash": 0,
+               "fPierce": 0,
+               "fChop": 0,
+               "fPickaxe": 0,
+               "fFire": 0,
+               "fFrost": 0,
+               "fLightning": 0,
+               "fPoison": 0,
+               "fSpirit": 0
+            },
+            "fAttackDamageTotalOverride": null,
+            "sAttackProjectileOverride": null,
+            "aStartEffects": [
+               "sfx_skeleton_attack"
+            ],
+            "aHitEffects": [
+               "sfx_unarmed_hit"
+            ],
+            "aTriggerEffects": null
+         }
+      ]
+   },
+   "Category_BaseAI":{
+      "fViewRange":30,
+      "fViewAngle":90,
+      "fHearRange":9999,
+      "sPathAgentType":"HumanoidNoSwim",
+      "fRandomCircleInterval":2,
+      "fRandomMoveInterval":20,
+      "fRandomMoveRange":10,
+      "bAvoidFire":false,
+      "bAfraidOfFire":false,
+      "bAvoidWater":true,
+      "sSpawnMessage":"",
+      "sDeathMessage":""
+   },
+   "Category_MonsterAI":{
+      "fAlertRange":20,
+      "bFleeIfHurtWhenTargetCantBeReached":true,
+      "bFleeIfNotAlerted":false,
+      "fFleeIfLowHealth":0,
+      "bCirculateWhileCharging":true,
+      "bCirculateWhileChargingFlying":false,
+      "bEnableHuntPlayer":false,
+      "bAttackPlayerObjects":true,
+      "bAttackPlayerObjectsWhenAlerted":true,
+      "fInterceptTimeMax":2,
+      "fInterceptTimeMin":0,
+      "fMaxChaseDistance":0,
+      "fMinAttackInterval":0,
+      "fCircleTargetInterval":5,
+      "fCircleTargetDuration":7,
+      "fCircleTargetDistance":5,
+      "aConsumeItems":[
+         
+      ],
+      "fConsumeRange":2,
+      "fConsumeSearchRange":5,
+      "fConsumeSearchInterval":10,
+      "fConsumeHeal":0
+   },
+   "Category_CharacterDrop":{
+      "bReplaceOriginalDrops":true,
+      "drDrops":[
+         {
+            "sPrefabName":"TrophySkeleton",
+            "iAmountMin":1,
+            "iAmountMax":1,
+            "fChance":0.1,
+            "bOnePerPlayer":false,
+            "bLevelMultiplier":false
+         },
+         {
+            "sPrefabName":"BoneFragments",
+            "iAmountMin":1,
+            "iAmountMax":1,
+            "fChance":1,
+            "bOnePerPlayer":false,
+            "bLevelMultiplier":true
+         },
+         {
+            "sPrefabName":"Coal",
+            "iAmountMin":1,
+            "iAmountMax":2,
+            "fChance":1,
+            "bOnePerPlayer":false,
+            "bLevelMultiplier":true
+         }
+      ]
+   },
+   "Category_Special":{
+      "bCanTame":false,
+      "bAlwaysTame":false,
+      "bCommandableWhenTame":false,
+      "bCanProcreateWhenTame":false,
+      "bFxNoTame":false,
+      "bSfxNoAlert":false,
+      "bSfxNoIdle":false,
+      "bSfxNoHit":false,
+      "bSfxNoDeath":false
+   },
+   "Category_NpcOnly":null,
+   "sConfigFormatVersion":"0.2.0"
+}

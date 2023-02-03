@@ -1,0 +1,46 @@
+{
+  "item_barbarian_helmet": "Шлем варвара",
+  "item_barbarian_helmet_description": "Шлем из бронзы. Как предсказуемо.",
+  "item_barbarian_chest": "Латы варвара",
+  "item_barbarian_chest_description": "Просто бронзовый диск на кожаных ремешках. Настоящий варвар бросается в бой, несмотря на отсутствие защиты!",
+  "item_barbarian_legs": "Поножи варвара",
+  "item_barbarian_legs_description": "Толстая шкура, обвивающая талию, застегивается бронзовым поясом. Кто тут самый модный?",
+  "item_barbarian_cape": "Меховая накидка варвара",
+  "item_barbarian_cape_description": "Плотная, но короткая накидка из меха. Покрывает так же, как и пьяные товарищи по рейду.",
+
+  "item_plate_helmet": "Пластинчатый шлем",
+  "item_plate_helmet_description": "A sturdy helmet with a leather neckguard",
+  "item_plate_chest": "Пластинчатый нагрудник",
+  "item_plate_chest_description": "Thick plates of metal riveted to a leather harness",
+  "item_plate_legs": "Пластинчатые поножи",
+  "item_plate_legs_description": "Reliable greaves and kneeguards",
+  
+  "item_dragonslayer_helmet": "Шлем Довакина",
+  "item_dragonslayer_helmet_description": "Dragon's tremble in fear when they see the blackened helmet adorned with the horns of their kin",
+  "item_dragonslayer_chest": "Латы Довакина",
+  "item_dragonslayer_chest_description": "Obsidian layer over silver plates provides reliable protection",
+  "item_dragonslayer_legs": "Штаны Довакина",
+  "item_dragonslayer_legs_description": "Unlucky is he who finds himself in the way of these",
+
+  "item_nomad_helmet": "Шлем кочевника",
+  "item_nomad_helmet_description": "Helmet made of blackmetal with colorful padding fit for a nomad",
+  "item_nomad_chest": "Кольчуга кочевника",
+  "item_nomad_chest_description": "A nomadic garb adorned with protective elements made of blackmetal, found commonly in the nomad's homeland, the plains",
+  "item_nomad_legs": "Штаны кочевника",
+  "item_nomad_legs_description": "Thick leather boots with blackmetal toe guard, helpful when one happens to get stomped on by a Lox",
+
+  "item_wanderer_helmet": "Соломенная шляпа странника",
+  "item_wanderer_helmet_description": "A reinforced straw hat",
+  "item_wanderer_chest": "Накидка странника",
+  "item_wanderer_chest_description": "Small metal plates attached to a leather jerkin, easy to maintain during travels",
+  "item_wanderer_legs": "Штаны странника",
+  "item_wanderer_legs_description": "Durable pants with makeshift protection around the shins",
+  
+  "item_mistlands_helmet": "Mistlands helmet",
+  "item_mistlands_helmet_description": "Helmet made from a rare material only found within the mistlandst",
+  "item_mistlands_chest": "Mistlands chest",
+  "item_mistlands_chest_description": "Thick, multi layered gambeson provides protection from the searing heat of flametal, which in turns protects from blows",
+  "item_mistlands_legs": "Mistlands legs",
+  "item_mistlands_legs_description": "One need not fear the cold while wearing these",
+  
+}

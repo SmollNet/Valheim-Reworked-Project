@@ -1,0 +1,15 @@
+{  
+  "item_cape_heavybackpack": "Походный рюкзак",
+  "item_cape_heavybackpack_description": "Большой сундук, взваленный на плечи, с холщовой сумкой для дополнительного хранения.",
+  
+  "item_cape_simplebackpack": "Кожанный рюкзак",
+  "item_cape_simplebackpack_description": "Кожаный контейнер, прикрепленный к деревянной раме.",
+  
+  "item_cape_ironbackpack": "Прочный рюкзак",
+  "item_cape_ironbackpack_description": "Крепко укрепленный рюкзак с пряжками и тонкими кожаными ремнями.",
+
+  "item_cape_silverbackpack": "Полярный рюкзак",
+  "item_cape_silverbackpack_description": "Рюкзак c утепленной спинкой, отлично подходит для длительных походов в горы.",
+  
+  "ui_backpack_inventoryname": "Рюкзак"
+}
